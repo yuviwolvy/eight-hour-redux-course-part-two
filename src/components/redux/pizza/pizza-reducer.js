@@ -4,7 +4,7 @@ const initialState = {
   pizzaBase: 1000,
 };
 
-export const reducer = (state = initialState, action) => {
+export const pizzaReducer = (state = initialState, action) => {
   switch (action.type) {
     case ORDER_PIZZA:
       return {

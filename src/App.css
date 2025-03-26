@@ -1,4 +1,6 @@
-.container {
+/* Styling for Pizzabox component */
+
+.pizzabox-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,13 +14,13 @@
   margin: auto;
 }
 
-.text {
+.pizzabox-text {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
 }
 
-.btn {
+.pizzabox-btn {
   background-color: #ff6347; /* Tomato color */
   color: white;
   border: none;
@@ -29,6 +31,42 @@
   transition: background 0.3s ease-in-out;
 }
 
-.btn:hover {
+.pizzabox-btn:hover {
   background-color: #d9534f; /* Darker red */
+}
+
+/* Styling for Burgerbox component */
+.burgerbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #964b00; /* Light yellow, pizza theme */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: auto;
+}
+
+.burgerbox-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.burgerbox-btn {
+  background-color: #f8d24e; /* Cheese color */
+  color: black;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.burgerbox-btn:hover {
+  background-color: #ff0; /* Nastier Yellow */
 }

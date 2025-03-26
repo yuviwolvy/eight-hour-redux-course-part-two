@@ -4,9 +4,11 @@ import { connect } from "react-redux";
 
 function Pizzabox(props) {
   return (
-    <div className="container">
-      <h2 className="text">Number of Pizza Available: {props.pizzaBase}</h2>
-      <button className="btn" onClick={props.orderPizza}>
+    <div className="pizzabox-container">
+      <h2 className="pizzabox-text">
+        Number of Pizza Available: {props.pizzaBase}
+      </h2>
+      <button className="pizzabox-btn" onClick={props.orderPizza}>
         Order Pizza
       </button>
     </div>
@@ -15,7 +17,7 @@ function Pizzabox(props) {
 
 const mapStateToProps = (state) => {
   return {
-    pizzaBase: state.pizzaBase,
+    pizzaBase: state.pizza.pizzaBase,
   };
 };
 
