@@ -3,6 +3,7 @@ import Pizzabox from "./components/pizzabox";
 import { Provider } from "react-redux";
 import store from "./components/redux/store";
 import BurgerBox from "./components/burgerbox";
+import CustomerChoice from "./components/customer-choice";
 // import HooksContainer from "./components/hooks-container";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Pizzabox />
       <BurgerBox />
       {/* <HooksContainer /> */}
+      <CustomerChoice />
     </Provider>
   );
 }

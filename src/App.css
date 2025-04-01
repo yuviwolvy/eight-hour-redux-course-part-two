@@ -48,6 +48,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   margin: auto;
+  margin-top: 2%;
 }
 
 .burgerbox-text {
@@ -69,4 +70,26 @@
 
 .burgerbox-btn:hover {
   background-color: #ff0; /* Nastier Yellow */
+}
+
+/* Styling for the input box */
+.custom-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #088395;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+  border-color: #37b7c3;
+  box-shadow: 0 0 5px rgba(55, 183, 195, 0.5);
+}
+
+.custom-input::placeholder {
+  color: #888;
+  font-style: italic;
 }
